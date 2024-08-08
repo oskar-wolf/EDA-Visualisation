@@ -96,9 +96,9 @@ plt.ylabel('y label 211')
 # second position
 plt.subplot(212)
 plt.plot(x, y2)
-plt.title('Subplot 211')
-plt.xlabel('x label 211')
-plt.ylabel('y label 211')
+plt.title('Subplot 212')
+plt.xlabel('x label 212')
+plt.ylabel('y label 212')
 
 # show the plot
 plt.show()

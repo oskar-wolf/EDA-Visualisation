@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<head>    
+<html>
+<head>
+    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
         <script>
@@ -9,39 +11,43 @@
     
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_f79ca336b2274394b65c9244b7b9020e {
+                #map_3aa91077a33b84fb27490629f14c7756 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
                     left: 0.0%;
                     top: 0.0%;
                 }
+                .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
 </head>
-<body>    
+<body>
     
-            <div class="folium-map" id="map_f79ca336b2274394b65c9244b7b9020e" ></div>
+    
+            <div class="folium-map" id="map_3aa91077a33b84fb27490629f14c7756" ></div>
         
 </body>
-<script>    
+<script>
     
-            var map_f79ca336b2274394b65c9244b7b9020e = L.map(
-                "map_f79ca336b2274394b65c9244b7b9020e",
+    
+            var map_3aa91077a33b84fb27490629f14c7756 = L.map(
+                "map_3aa91077a33b84fb27490629f14c7756",
                 {
                     center: [52.520008, 13.404954],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +61,55 @@
 
         
     
-            var tile_layer_a12fc7f62eb64da1874116a43dc01e5f = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_f79ca336b2274394b65c9244b7b9020e);
+            var tile_layer_8057d911f3a06a1dd35d344423c9b361 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
         
+    
+            tile_layer_8057d911f3a06a1dd35d344423c9b361.addTo(map_3aa91077a33b84fb27490629f14c7756);
+        
+    
+            var marker_0d79640a0eae91e75690a85865801c8d = L.marker(
+                [52.515816, 13.454293],
+                {}
+            ).addTo(map_3aa91077a33b84fb27490629f14c7756);
+        
+    
+        var popup_b5618ef72f92fd146cff06d47876d177 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abedb4a40c31abc1ee76a38065b2d9d7 = $(`<div id="html_abedb4a40c31abc1ee76a38065b2d9d7" style="width: 100.0%; height: 100.0%;">Marker 1</div>`)[0];
+                popup_b5618ef72f92fd146cff06d47876d177.setContent(html_abedb4a40c31abc1ee76a38065b2d9d7);
+            
+        
+
+        marker_0d79640a0eae91e75690a85865801c8d.bindPopup(popup_b5618ef72f92fd146cff06d47876d177)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_60a82cf7165610838515263af289f86b = new L.RegularPolygonMarker(
+                [52.48388, 13.3477],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 4, "opacity": 1.0, "radius": 15, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_3aa91077a33b84fb27490629f14c7756);
+        
+    
+        var popup_411c0e8af0ce9a3a369389aa30874829 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1686772379f22aa2366670b4a6a83d7 = $(`<div id="html_c1686772379f22aa2366670b4a6a83d7" style="width: 100.0%; height: 100.0%;">Marker 2</div>`)[0];
+                popup_411c0e8af0ce9a3a369389aa30874829.setContent(html_c1686772379f22aa2366670b4a6a83d7);
+            
+        
+
+        regular_polygon_marker_60a82cf7165610838515263af289f86b.bindPopup(popup_411c0e8af0ce9a3a369389aa30874829)
+        ;
+
+        
+    
 </script>
+</html>

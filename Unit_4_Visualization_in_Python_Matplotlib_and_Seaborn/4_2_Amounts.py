@@ -50,8 +50,7 @@ df = pd.DataFrame([ \
             'Number of students'])
 
 # create bar plot
-sns.barplot(df["Programming language"], \
-    df["Number of students"])
+sns.barplot(x= df["Programming language"], y = df["Number of students"])
 
 # add subplot
 ax4 = fig.add_subplot(234)

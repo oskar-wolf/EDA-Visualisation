@@ -23,3 +23,6 @@ ax1 = fig.add_subplot(111)
 plt.pie(students, labels=prog_language, \
     autopct='%1.1f%%', explode=[0.01]*3, \
         pctdistance=0.5)
+        
+plt.show()
+# %%

@@ -38,7 +38,7 @@ plt.show()
 fig = plt.figure(figsize=(14, 6))
 
 # set map projection
-ax = plt.axes(projection=ccrs.PlateCarree())
+ax = plt.axes(projection=ccrs.Mercator())
 
 # load basemap
 ax.stock_img()
